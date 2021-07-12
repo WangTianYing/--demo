@@ -1,0 +1,95 @@
+#cy{
+  height:700px;
+}
+.warn{
+  background-color:green !important;
+  animation: warn 3s ease-in;
+  -webkit-animation: warn 3s ease-in;
+  -moz-animation: warn 3s ease-in;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes warn {
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(0.3);
+    opacity: 1;
+  }
+
+  75% {
+    transform: scale(1);
+    -webkit-transform: scale(0.3);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(0.5);
+    opacity: 0.6;
+  }
+
+  25% {
+    transform: scale(1);
+    -webkit-transform: scale(0.8);
+    opacity: 0.4;
+  }
+
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0.2;
+  }
+}
+button {
+  //font-size: 2em;
+  //background-color: #FC4C4C;
+  //color: #fff;
+  //border: 0;
+  //cursor: pointer;
+  //border-radius: 0.25em;
+  //font-family: helvetica neue, helvetica, arial, sans-serif;
+  //outline: 0;
+}
+
+#clear {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0.25em;
+  visibility: hidden;
+  color:black
+}
+
+body.has-start #clear {
+  visibility: visible;
+}
+
+#end {
+  display: none;
+}
+body.has-start:not(.has-end) #end {
+  display: block;
+}
+
+body.has-start:not(.has-end) #start {
+  display: none;
+}
+#startAll{
+  margin-top:5px;
+  display:block;
+}
+#popId{
+  padding:5px;
+  background:#dadaec;
+  border-radius:3%;
+}
+#popId button{
+  font-size:14px;
+}
+.message{
+  margin-bottom:5px;
+}
+
+
